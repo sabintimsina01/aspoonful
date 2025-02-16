@@ -1,0 +1,77 @@
+<!-- feature section -->
+
+<section class="w-full bg-[#f5e4c3] py-12">
+    <div class="container mx-auto px-6 text-center">
+        <!-- Section Title -->
+        <h2 class="text-4xl font-bold text-black">
+            WHAT YOU WILL <span class="text-red-500">EXPERIENCE</span>
+        </h2>
+
+        <!-- Features Grid -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Feature Card -->
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Exclusive Live Webinars & Workshops</h3>
+                <p class="mt-2 text-gray-300">
+                    Join real-time sessions with experts on topics like Creating Your Own Reality and Changing Your Negative Self-Talk.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Transformative Course Library</h3>
+                <p class="mt-2 text-gray-300">
+                    Access structured courses like Mastering Relationship with Self and Raising Your Frequency for Success.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Thriving Community Hub</h3>
+                <p class="mt-2 text-gray-300">
+                    Connect with like-minded learners in our Membership Portal, form accountability groups, and share progress.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Free Starter Resources</h3>
+                <p class="mt-2 text-gray-300">
+                    Start with free courses like Psalms for Money and bite-sized workshops to kickstart your transformation.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Curated Learning Tools</h3>
+                <p class="mt-2 text-gray-300">
+                    Access downloadable books, workbooks, and weekly newsletters packed with tips and success stories.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Live Q&A & Progress Coaching</h3>
+                <p class="mt-2 text-gray-300">
+                    Get personalized support through monthly live coaching sessions, troubleshoot challenges, and celebrate wins.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Flexible Learning Paths</h3>
+                <p class="mt-2 text-gray-300">
+                    Mix and match courses, workshops, and books to create a roadmap tailored to your goals.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">BONUS: 24/7 Discord Access</h3>
+                <p class="mt-2 text-gray-300">
+                    All members get access to a private Discord for instant peer support, resources, and expert streams.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Personalized Growth Plans</h3>
+                <p class="mt-2 text-gray-300">
+                    Get a tailored learning roadmap based on your personal growth goals, ensuring a structured path to success.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

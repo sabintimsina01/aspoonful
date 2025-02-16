@@ -1,0 +1,67 @@
+\<section class="w-full bg-white shadow-md">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="your-logo.png" alt="Logo" class="h-10 w-auto"> <!-- Replace with your logo -->
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 text-gray-800 font-semibold text-lg" style="font-family: 'Poppins', sans-serif;">
+            <li class="relative group">
+                <a href="#" class="hover:text-red-500 transition-all duration-300">About</a>
+                <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li class="relative group">
+                <a href="#" class="hover:text-red-500 transition-all duration-300">Podcast</a>
+                <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li class="relative group">
+                <a href="#" class="hover:text-red-500 transition-all duration-300">Price</a>
+                <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+            <li class="relative group">
+                <a href="#" class="hover:text-red-500 transition-all duration-300">Blog</a>
+                <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="hidden md:flex space-x-4">
+            <a href="#" class="border border-red-500 text-red-500 px-5 py-2 rounded-full font-semibold transition-all duration-300 hover:bg-red-100 shadow-md">
+                Login
+            </a>
+            <a href="#" class="bg-red-500 text-white px-6 py-2 rounded-full font-semibold shadow-md transition-all duration-300 hover:bg-red-600">
+                Signup
+            </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+            <svg class="w-7 h-7 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4 text-center">
+        <ul class="space-y-4 text-gray-800 font-semibold text-lg" style="font-family: 'Poppins', sans-serif;">
+            <li><a href="#" class="block hover:text-red-500 transition-all duration-300">About</a></li>
+            <li><a href="#" class="block hover:text-red-500 transition-all duration-300">Podcast</a></li>
+            <li><a href="#" class="block hover:text-red-500 transition-all duration-300">Price</a></li>
+            <li><a href="#" class="block hover:text-red-500 transition-all duration-300">Blog</a></li>
+            <li><a href="#" class="block border border-red-500 text-red-500 px-5 py-2 rounded-full text-center transition-all duration-300 hover:bg-red-100 shadow-md">Login</a></li>
+            <li><a href="#" class="block bg-red-500 text-white px-6 py-2 rounded-full text-center shadow-md transition-all duration-300 hover:bg-red-600">Signup</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</section>

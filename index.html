@@ -1,0 +1,519 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aspoonful</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    </head>
+    <body class="bg-gray-100 text-gray-900">
+
+        <!-- NAV Bar -->
+
+        <section class="w-full bg-white shadow-md">
+            <nav class="container mx-auto flex items-center justify-between p-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="your-logo.png" alt="Logo" class="h-10 w-auto"> <!-- Replace with your logo -->
+                </div>
+        
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8 text-gray-800 font-semibold text-lg" style="font-family: 'Poppins', sans-serif;">
+                    <li class="relative group">
+                        <a href="#" class="hover:text-red-500 transition-all duration-300">About</a>
+                        <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-red-500 transition-all duration-300">Podcast</a>
+                        <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-red-500 transition-all duration-300">Price</a>
+                        <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-red-500 transition-all duration-300">Blog</a>
+                        <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                </ul>
+        
+                <!-- Buttons -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="#" class="border border-red-500 text-red-500 px-5 py-2 rounded-full font-semibold transition-all duration-300 hover:bg-red-100 shadow-md">
+                        Login
+                    </a>
+                    <a href="#" class="bg-red-500 text-white px-6 py-2 rounded-full font-semibold shadow-md transition-all duration-300 hover:bg-red-600">
+                        Signup
+                    </a>
+                </div>
+        
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden focus:outline-none">
+                    <svg class="w-7 h-7 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </nav>
+        
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4 text-center">
+                <ul class="space-y-4 text-gray-800 font-semibold text-lg" style="font-family: 'Poppins', sans-serif;">
+                    <li><a href="#" class="block hover:text-red-500 transition-all duration-300">About</a></li>
+                    <li><a href="#" class="block hover:text-red-500 transition-all duration-300">Podcast</a></li>
+                    <li><a href="#" class="block hover:text-red-500 transition-all duration-300">Price</a></li>
+                    <li><a href="#" class="block hover:text-red-500 transition-all duration-300">Blog</a></li>
+                    <li><a href="#" class="block border border-red-500 text-red-500 px-5 py-2 rounded-full text-center transition-all duration-300 hover:bg-red-100 shadow-md">Login</a></li>
+                    <li><a href="#" class="block bg-red-500 text-white px-6 py-2 rounded-full text-center shadow-md transition-all duration-300 hover:bg-red-600">Signup</a></li>
+                </ul>
+            </div>
+        
+            <script>
+                // Mobile Menu Toggle
+                const menuBtn = document.getElementById("menu-btn");
+                const mobileMenu = document.getElementById("mobile-menu");
+        
+                menuBtn.addEventListener("click", () => {
+                    mobileMenu.classList.toggle("hidden");
+                });
+            </script>
+        </section>
+        
+<!-- hero section -->
+
+        <section class="relative w-full bg-black text-white flex items-center justify-center min-h-[80vh]">
+            <div class="container mx-auto px-6 lg:px-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
+                    <!-- Left Side - Text Content -->
+                    <div class="text-left">
+                        <p class="text-lg font-medium text-gray-300 leading-relaxed">Welcome to</p>
+                        <h1 class="text-4xl font-bold leading-tight lg:text-5xl lg:leading-snug">
+                            Aspoonful: <span class="text-yellow-400">Feeding People Knowledge</span> Aspoonful at a Time
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-300 leading-relaxed">
+                            The Personal Development site that gives its focus to Spiritual Awakening. When it comes to mindfulness and spiritual awakening, do you really understand the terms and what they mean to you and your relationships?
+                        </p>
+        
+                        <!-- Call to Action Buttons -->
+                        <div class="mt-6 flex space-x-4">
+                            <a href="#" class="bg-red-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 hover:bg-red-600">
+                                Join Now
+                            </a>
+                            <a href="#" class="border border-white text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-white hover:text-black">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Right Side - Image Placeholder -->
+                    <div class="flex justify-center">
+                        <img src="your-image.jpg" alt="Hero Image" class="max-w-full h-auto rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+<!-- feature section -->
+
+<section class="w-full bg-[#f5e4c3] py-12">
+    <div class="container mx-auto px-6 text-center">
+        <!-- Section Title -->
+        <h2 class="text-4xl font-bold text-black">
+            WHAT YOU WILL <span class="text-red-500">EXPERIENCE</span>
+        </h2>
+
+        <!-- Features Grid -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Feature Card -->
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Exclusive Live Webinars & Workshops</h3>
+                <p class="mt-2 text-gray-300">
+                    Join real-time sessions with experts on topics like Creating Your Own Reality and Changing Your Negative Self-Talk.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Transformative Course Library</h3>
+                <p class="mt-2 text-gray-300">
+                    Access structured courses like Mastering Relationship with Self and Raising Your Frequency for Success.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Thriving Community Hub</h3>
+                <p class="mt-2 text-gray-300">
+                    Connect with like-minded learners in our Membership Portal, form accountability groups, and share progress.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Free Starter Resources</h3>
+                <p class="mt-2 text-gray-300">
+                    Start with free courses like Psalms for Money and bite-sized workshops to kickstart your transformation.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Curated Learning Tools</h3>
+                <p class="mt-2 text-gray-300">
+                    Access downloadable books, workbooks, and weekly newsletters packed with tips and success stories.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Live Q&A & Progress Coaching</h3>
+                <p class="mt-2 text-gray-300">
+                    Get personalized support through monthly live coaching sessions, troubleshoot challenges, and celebrate wins.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Flexible Learning Paths</h3>
+                <p class="mt-2 text-gray-300">
+                    Mix and match courses, workshops, and books to create a roadmap tailored to your goals.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">BONUS: 24/7 Discord Access</h3>
+                <p class="mt-2 text-gray-300">
+                    All members get access to a private Discord for instant peer support, resources, and expert streams.
+                </p>
+            </div>
+
+            <div class="bg-black text-white p-6 rounded-xl flex flex-col justify-center items-center text-center h-48">
+                <h3 class="text-xl font-semibold">Personalized Growth Plans</h3>
+                <p class="mt-2 text-gray-300">
+                    Get a tailored learning roadmap based on your personal growth goals, ensuring a structured path to success.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Course Section -->
+
+<section class="w-full bg-gray-100 py-12">
+    <div class="container mx-auto px-6">
+        <!-- Section Title -->
+        <h2 class="text-4xl font-bold text-black text-center">Featured <span class="text-red-500">Courses</span></h2>
+
+        <!-- Courses Grid -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Course Card 1 -->
+            <a href="#" class="block bg-white p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg" alt="Mastering Relationship with Self" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-left">Mastering Relationship with Self</h3>
+                <p class="text-gray-600 mt-2 text-left">
+                    Learn how to build self-awareness and create a positive relationship with yourself.
+                </p>
+            </a>
+
+            <!-- Course Card 2 -->
+            <a href="#" class="block bg-white p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg" alt="Creating Your Own Reality" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-left">Creating Your Own Reality</h3>
+                <p class="text-gray-600 mt-2 text-left">
+                    Discover how thoughts and beliefs shape reality, and how to take control.
+                </p>
+            </a>
+
+            <!-- Course Card 3 -->
+            <a href="#" class="block bg-white p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/4386393/pexels-photo-4386393.jpeg" alt="Psalms for Money" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-left">Psalms for Money</h3>
+                <p class="text-gray-600 mt-2 text-left">
+                    Explore how ancient wisdom from Psalms can attract financial prosperity.
+                </p>
+            </a>
+
+            <!-- Course Card 4 -->
+            <a href="#" class="block bg-white p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/853151/pexels-photo-853151.jpeg" alt="Raising Your Frequency for Prosperity and Success" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-left">Raising Your Frequency for Prosperity and Success</h3>
+                <p class="text-gray-600 mt-2 text-left">
+                    Understand how energy and vibrations influence your success.
+                </p>
+            </a>
+
+            <!-- Course Card 5 -->
+            <a href="#" class="block bg-white p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/1556706/pexels-photo-1556706.jpeg" alt="Changing Your Negative Self-Talk" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-left">Changing Your Negative Self-Talk</h3>
+                <p class="text-gray-600 mt-2 text-left">
+                    Learn how to transform self-doubt into positive self-communication.
+                </p>
+            </a>
+
+            <!-- Course Card 6 -->
+            <a href="#" class="block bg-white p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3759651/pexels-photo-3759651.jpeg" alt="Elevate Your Genius" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-left">Elevate Your Genius</h3>
+                <p class="text-gray-600 mt-2 text-left">
+                    Develop habits and techniques to unlock your highest potential.
+                </p>
+            </a>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="mt-10 text-center">
+            <a href="#" class="bg-red-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 hover:bg-red-600">
+                See All Courses
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- About the creator -->
+
+<section class="relative w-full bg-gray-200 py-16">
+    <div class="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row items-center gap-12">
+        <!-- Left Side: Image with Custom Frame -->
+        <div class="relative w-full lg:w-1/3 flex justify-center">
+            <div class="relative">
+                <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg" 
+                     alt="David E. Smith Jr." 
+                     class="w-72 h-72 object-cover rounded-lg border-8 border-red-500 shadow-xl transform rotate-3">
+                <div class="absolute top-4 left-4 bg-red-500 text-white px-4 py-2 text-sm font-semibold rounded-lg shadow-md">
+                    Visionary Leader
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Text Content -->
+        <div class="w-full lg:w-2/3">
+            <h2 class="text-5xl font-extrabold text-gray-900 leading-tight">
+                Meet <span class="text-red-500">David E. Smith Jr.</span>
+            </h2>
+            <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                A true renaissance man, David E. Smith Jr. transitioned from a career as an NY prosecutor to pursuing his lifelong passion creating transformative learning experiences for children and adults.
+            </p>
+            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                His expertise covers Vedic Mathematics, Esoteric Sciences, Consciousness, Copywriting, and Coaching. Through live sessions, podcasts, and webinars, David empowers learners worldwide.
+            </p>
+            <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                His impact can be found across YouTube, blogs, and Aspoonful.com, where he continues to share groundbreaking knowledge and insights.
+            </p>
+
+            <!-- Call to Action Button -->
+            <div class="mt-8">
+                <a href="#" class="bg-red-500 text-white px-8 py-3 text-lg rounded-full font-semibold shadow-md transition-all duration-300 hover:bg-red-600">
+                    Discover More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="w-full bg-white py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+        <!-- Section Title -->
+        <h2 class="text-4xl font-bold text-black text-center">Latest <span class="text-red-500">Insights & Articles</span></h2>
+
+        <!-- Articles Grid -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <a href="#" class="block bg-gray-100 p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3184170/pexels-photo-3184170.jpeg" alt="Article 1" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-gray-900">The Power of Mindfulness</h3>
+                <p class="mt-2 text-gray-600">
+                    Discover how mindfulness techniques can improve your focus, productivity, and emotional well-being.
+                </p>
+                <p class="mt-2 text-sm text-red-500 font-semibold">Read More →</p>
+            </a>
+
+            <!-- Article 2 -->
+            <a href="#" class="block bg-gray-100 p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3184324/pexels-photo-3184324.jpeg" alt="Article 2" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-gray-900">How to Raise Your Frequency</h3>
+                <p class="mt-2 text-gray-600">
+                    Learn how vibrational energy affects your success and how to cultivate a positive frequency.
+                </p>
+                <p class="mt-2 text-sm text-red-500 font-semibold">Read More →</p>
+            </a>
+
+            <!-- Article 3 -->
+            <a href="#" class="block bg-gray-100 p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg" alt="Article 3" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-gray-900">The Science of Manifestation</h3>
+                <p class="mt-2 text-gray-600">
+                    Understand the psychological and energetic principles behind manifestation.
+                </p>
+                <p class="mt-2 text-sm text-red-500 font-semibold">Read More →</p>
+            </a>
+
+            <!-- Article 4 -->
+            <a href="#" class="block bg-gray-100 p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Article 4" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-gray-900">Overcoming Negative Self-Talk</h3>
+                <p class="mt-2 text-gray-600">
+                    Find out how to replace limiting beliefs with empowering thoughts.
+                </p>
+                <p class="mt-2 text-sm text-red-500 font-semibold">Read More →</p>
+            </a>
+
+            <!-- Article 5 -->
+            <a href="#" class="block bg-gray-100 p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg" alt="Article 5" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-gray-900">The Connection Between Spirituality & Success</h3>
+                <p class="mt-2 text-gray-600">
+                    Discover how spiritual principles can lead to real-world achievements.
+                </p>
+                <p class="mt-2 text-sm text-red-500 font-semibold">Read More →</p>
+            </a>
+
+            <!-- Article 6 -->
+            <a href="#" class="block bg-gray-100 p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Article 6" class="w-full h-48 rounded-lg object-cover">
+                <h3 class="mt-4 text-xl font-semibold text-gray-900">Unlocking Your Full Potential</h3>
+                <p class="mt-2 text-gray-600">
+                    Actionable strategies to tap into your hidden abilities and reach your goals.
+                </p>
+                <p class="mt-2 text-sm text-red-500 font-semibold">Read More →</p>
+            </a>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="mt-12 text-center">
+            <a href="#" class="bg-red-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 hover:bg-red-600">
+                See All Articles
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- price section -->
+
+<section class="w-full bg-gray-100 py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+        <!-- Section Header -->
+        <h2 class="text-4xl font-bold text-center text-black">Invest in Your Growth. <span class="text-red-500">Learn for Life.</span></h2>
+
+        <div class="mt-8 flex flex-col lg:flex-row justify-between items-center gap-8">
+            <!-- Left Section: Guarantee & Team License Info -->
+            <div class="w-full lg:w-1/3">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold flex items-center gap-2">
+                        ✅ 100% Risk-Free
+                    </h3>
+                    <p class="text-gray-600 mt-2">
+                        We offer a 14 day money-back guarantee. If you're not satisfied, get a full refund—no questions asked.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 mt-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold flex items-center gap-2">
+                        👥 Need a Team License?
+                    </h3>
+                    <p class="text-gray-600 mt-2">
+                        Get bulk access for your team or company.  
+                        <a href="#" class="text-red-500 font-semibold">Contact us</a> for special pricing.
+                    </p>
+                </div>
+
+                <!-- Currency Switcher -->
+                <div class="mt-6">
+                    <label for="currency" class="block text-gray-700 font-semibold mb-2">Choose your currency:</label>
+                    <select id="currency" class="border border-gray-300 rounded-lg px-4 py-2 w-full" onchange="updatePrices()">
+                        <option value="usd">$ USD - US Dollar</option>
+                        <option value="eur">€ EUR - Euro</option>
+                        <option value="gbp">£ GBP - British Pound</option>
+                        <option value="inr">₹ INR - Indian Rupee</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Pricing Plans -->
+            <div class="w-full lg:w-2/3 flex flex-col lg:flex-row gap-6">
+                <!-- Monthly Plan -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-red-500 w-full lg:w-1/2">
+                    <div class="text-center">
+                        <span class="bg-red-500 text-white px-4 py-1 text-sm font-bold rounded-lg shadow-md">
+                            Most Popular
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-gray-900 mt-4">Pro Membership</h3>
+                    <p class="text-center mt-2 text-gray-500">Billed Monthly</p>
+                    <p class="text-4xl font-bold text-center text-black mt-2">
+                        <span id="monthly-price">$19.99</span> <span class="text-xl font-medium">/ month</span>
+                    </p>
+                    
+                    <!-- CTA Button -->
+                    <div class="mt-4 text-center">
+                        <a href="#" class="bg-red-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 hover:bg-red-600">
+                            Get Monthly Plan
+                        </a>
+                    </div>
+
+                    <!-- Features -->
+                    <ul class="mt-6 space-y-2 text-gray-700">
+                        <li>✅ Access to all courses</li>
+                        <li>✅ Lifetime access to all courses with future updates</li>
+                        <li>✅ Access to new courses in the future</li>
+                        <li>✅ Access to a private community group</li>
+                        <li>✅ Weekly live sessions</li>
+                    </ul>
+                </div>
+
+                <!-- Lifetime Plan -->
+                <div class="bg-white p-6 rounded-lg shadow-lg w-full lg:w-1/2">
+                    <h3 class="text-2xl font-semibold text-center text-gray-900">Lifetime Access</h3>
+                    <p class="text-center mt-2 text-gray-500">One-Time Payment</p>
+                    <p class="text-4xl font-bold text-center text-black mt-2">
+                        <span id="lifetime-price">$1500</span>
+                    </p>
+
+                    <!-- CTA Button -->
+                    <div class="mt-4 text-center">
+                        <a href="#" class="bg-red-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition-all duration-300 hover:bg-red-600">
+                            Get Lifetime Access
+                        </a>
+                    </div>
+
+                    <!-- Features -->
+                    <ul class="mt-6 space-y-2 text-gray-700">
+                        <li>✅ Access to all courses</li>
+                        <li>✅ Lifetime access to all courses with future updates</li>
+                        <li>✅ Access to new courses in the future</li>
+                        <li>✅ Access to a private community group</li>
+                        <li>✅ Weekly live sessions</li>
+                        <li>✅ One-time payment, no monthly fees</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Currency Conversion -->
+<script>
+    function updatePrices() {
+        const currency = document.getElementById("currency").value;
+        const monthlyPrice = document.getElementById("monthly-price");
+        const lifetimePrice = document.getElementById("lifetime-price");
+
+        let prices = {
+            "usd": { monthly: "$19.99", lifetime: "$1500" },
+            "eur": { monthly: "€18.50", lifetime: "€1380" },
+            "gbp": { monthly: "£16.99", lifetime: "£1299" },
+            "inr": { monthly: "₹1650", lifetime: "₹124999" }
+        };
+
+        monthlyPrice.innerText = prices[currency].monthly;
+        lifetimePrice.innerText = prices[currency].lifetime;
+    }
+</script>
+
+
+
+    </body>
+    </html>
